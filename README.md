@@ -45,4 +45,13 @@ Download your Firebase configuration files, GoogleService-Info.plist for iOS and
 
 
 
-![screenshot](https://github.com/Lesruez93/Ionic-Cordova-Firebase-Phone-Auth-Android-and-IOS-/blob/master/screenshots/Genymotion%20for%20personal%20use%20-%20Google%20Nexus%205X%20-%208.0%20-%20API%2026%20-%201080x1920%20(1080x1920%2C%20420dpi)%20-%20192.168.167.101%201_25_2019%203_49_50%20PM.png)
+![screenshot](https://github.com/Lesruez93/Ionic-Cordova-Firebase-Phone-Auth-Android-and-IOS-/blob/master/screenshots/screenshot1.png)
+
+
+
+
+
+
+
+
+![screenshot](https://github.com/Lesruez93/Ionic-Cordova-Firebase-Phone-Auth-Android-and-IOS-/blob/master/screenshots/screenshot2.png)
