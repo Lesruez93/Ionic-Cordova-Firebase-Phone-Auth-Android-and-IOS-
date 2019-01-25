@@ -7,7 +7,7 @@ Requires a real device :iphone: NB emulator/simulator wont work
 
 Tested and fully working  :muscle: ..
 
-*Implemanted in the following Apps*
+*Implemented in the following Apps*
 
 1) https://play.google.com/store/apps/details?id=com.churchapp.disciplesoft
 
