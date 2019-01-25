@@ -3,7 +3,8 @@ import {
     Alert,
     AlertController,
     IonicPage,
-    LoadingController, MenuController,
+    LoadingController,
+    MenuController,
     NavController,
     NavParams,
     Platform,
@@ -12,12 +13,7 @@ import {
 
 import {Firebase} from '@ionic-native/firebase';
 import {AngularFireAuth} from 'angularfire2/auth';
-import {HttpClient} from "@angular/common/http";
-import {Storage} from "@ionic/storage";
-import {Api} from "../../providers";
-import {MembersProf} from "../../providers/memberProf/members-prof";
 import * as firebase from "firebase";
-import {FunctionsProvider} from "../../providers/functions/functions";
 
 
 @IonicPage({
@@ -39,7 +35,6 @@ export class LoginPage {
     private user: any;
     private phoneNumber: any;
     private phone: string;
-    private userinfo: any = {};
     private logged: any;
     selectedCode= '+263'
     @ViewChild('select1') select1: Select;
@@ -1207,65 +1202,41 @@ export class LoginPage {
         }];
 
 
-    constructor(public navCtrl: NavController, public navParams: NavParams,
-                private FireBase: Firebase,
+    constructor(public navCtrl: NavController,
+                private fireBase: Firebase,
                 private  alertCtrl: AlertController,
                 private afs: AngularFireAuth,
-                private  storage: Storage,
+
 
                 private loading:LoadingController,
-                private userr: MembersProf,
-                private menu:MenuController,
     ) {
-        this.ViewDidLoad()
 
-        this.menu.enable(false);
-        this.menu.swipeEnable(false);
+
     }
 
-    ionViewWillLeave(){
-        this.menu.enable(true);
-        //   this.menu.swipeEnable(true);
-    }
-    openSelect() {
-        setTimeout(() => {
-            this.select1.open();
-        }, 150);
-    }
+
 
     ViewDidLoad() {
-        // const loader = this.loading.create({
-        //     content: "Initializing",
-        //     duration: 3000
-        // });
-        //  loader.present()
-        this.storage.get('login').then((val) => {
-            this.logged = val
+
 
 
             this.afs.authState.subscribe(res => {
 
-                if (res && res.uid && this.logged == res.uid+"true") {
+                if (res && res.uid ) {
                     this.uid = res.uid;
 
-                    //  loader.dismissAll()
-
-                    //this.uid = navParams.get('uid') || res.uid;
-                    //this.bid  = navParams.get('bid')|| '1';
 
                     this.navCtrl.setRoot('HomePage',{
-                        //   refresh:"true",
                     });
 
 
                 }else {
-                    //loader.dismissAll()
                 }
 
 
 
             })
-        });
+
 
 
 
@@ -1281,18 +1252,20 @@ export class LoginPage {
             });
             loader.present()
             this.phone = this.selectedCode+this.phoneNumber;
-            this.FireBase.verifyPhoneNumber(this.phone, 60)
+            this.fireBase.verifyPhoneNumber(this.phone, 60)
 
                 .then((credential) => {
-                    this.verificationId = credential.verificationId;
-                    // this.verificationId = credential
+                    this.verificationId = credential.verificationId; /**  FOR ANDROID    **/
+                  //  this.verificationId = credential; /**  FOR IOS **/
+
+
                     loader.dismissAll()
                     this.isDisabled = true
 
 
                     this.showCodeInput = true;
                 }).catch((error) => {
-                this.presentAlert(error+"failed")
+                this.presentAlert(error.message)
                 loader.dismissAll()
                 console.error(error)
             });
@@ -1312,14 +1285,14 @@ export class LoginPage {
 
             });
             loader.present()
-            let signInCredential =  await firebase.auth.PhoneAuthProvider.credential(this.verificationId,this.code)//
+            let signInCredential =  await firebase.auth.PhoneAuthProvider.credential(this.verificationId,this.code);
 
             this.afs.auth.signInAndRetrieveDataWithCredential(signInCredential).then((success)=>{
                 console.log("iddd" + success.user.uid);
                 loader.dismissAll()
-                this.loadData(success.user.uid)
+                this.goToLogin(success.user.uid)
             }).then().catch(er =>{
-                    this.presentAlert("Something went")
+                    this.presentAlert(er.message)
                     loader.dismissAll()
                 }
 
@@ -1368,24 +1341,11 @@ export class LoginPage {
 
 
 
-    goToBranch(){
-        this.afs.authState.subscribe(res => {
 
-            if (res && res.uid ) {
-
-                this.navCtrl.push('SelectCellgroups', {
-                    uid: res.uid,
-                    phone: this.phone
-                })
-            }
-        })
-
-
-    }
-    goToLogin(){
+    goToLogin(uid){
 
         this.navCtrl.setRoot('HomePage',{
-            uid:this.uid,
+            uid:uid,
         },{
             direction: 'forward',
             animate: true
@@ -1408,7 +1368,6 @@ export class LoginPage {
         this.afs.auth.signInAndRetrieveDataWithEmailAndPassword('lesterrusike@gmail.com','llllllll')
             .then((success)=>{
                 console.log("iddiiid" + success.user.uid);
-                this.loadData(success.user.uid)
             }).then().catch(er =>{
                 this.presentAlert("Something went wrong")
             }
@@ -1417,36 +1376,5 @@ export class LoginPage {
 
 
 
-    private loadData(uuid) {
-        this.userr.qiri(uuid).then((res: any) => {
-            this.userinfo = JSON.parse(res.data);
 
-            console.log(this.userinfo.uid);
-
-
-            if (this.userinfo.uid == uuid) {
-                this.storage.set('login', 'true');
-                this.storage.set('branchId',this.userinfo.branch_id)
-
-                this.storage.set('name',this.userinfo.first_name +" "+this.userinfo.last_name);
-                this.goToLogin()
-
-
-            }
-            else if (this.userinfo.uid == 'false'){
-                this.goToBranch()
-
-
-            }
-            else {
-                this.presentAlert("There was a problem please try again later!")
-            }
-
-        }).catch(err => {
-            this.presentAlert("There was a problem please try again later!")
-
-            console.log('ERROR: ' + JSON.stringify(err))
-
-        })
-    }
 }
