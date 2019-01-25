@@ -1,14 +1,11 @@
 import {Component, ViewChild,} from '@angular/core';
 import {StatusBar} from '@ionic-native/status-bar';
 import {TranslateService} from '@ngx-translate/core';
-import {Config, MenuController, ModalController, Nav, Platform, ToastController} from 'ionic-angular';
+import {Config, Nav, Platform, ToastController} from 'ionic-angular';
 import {FcmProvider} from "../providers/fcm/fcm";
 import {Home, Login} from "../pages";
-import {Storage} from "@ionic/storage";
 import {AngularFireAuth} from 'angularfire2/auth';
-import {FunctionsProvider} from "../providers/functions/functions";
-import {AboutTabsPage} from "../pages/about-us/about-tabs";
-import {AppVersion} from "@ionic-native/app-version";
+
 
 
 @Component({

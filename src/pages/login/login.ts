@@ -1,15 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {
-    Alert,
-    AlertController,
-    IonicPage,
-    LoadingController,
-    MenuController,
-    NavController,
-    NavParams,
-    Platform,
-    Select
-} from 'ionic-angular';
+import {Alert, AlertController, IonicPage, LoadingController, NavController, Select} from 'ionic-angular';
 
 import {Firebase} from '@ionic-native/firebase';
 import {AngularFireAuth} from 'angularfire2/auth';

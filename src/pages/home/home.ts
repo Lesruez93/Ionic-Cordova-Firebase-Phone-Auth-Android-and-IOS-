@@ -9,11 +9,8 @@ import {
     NavParams,
     Platform
 } from 'ionic-angular';
-import {FunctionsProvider} from "../../providers/functions/functions";
 import {AngularFireAuth} from 'angularfire2/auth';
-import {Storage} from "@ionic/storage";
-import {ModalOption} from "./modal-options.component";
-import {Api} from "../../providers/api/api";
+
 
 
 @IonicPage()
