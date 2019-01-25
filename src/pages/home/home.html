@@ -1,15 +1,21 @@
+<ion-header>
 
-    <ion-toolbar color="primary">
-    <ion-header>
-    <ion-title>Home</ion-title>
-    </ion-header>
+<ion-toolbar color="primary">
+
+    <ion-title text-center>Home</ion-title>
 
     </ion-toolbar>
+</ion-header>
 
-    <ion-content >
-<ion-card>
-    <h3 text-center> You are logged in Your uid is</h3>
+    <ion-content  padding>
+<ion-card padding>
+    <h2 text-center> You are logged in
+        your uid is {{uid}}</h2>
+
+    <h2 text-center> You phone number is {{phone}}</h2>
 </ion-card>
+        <button half ion-button  block (click)="signOut()" icon-left>Sign Out</button>
+
     </ion-content>
 
 

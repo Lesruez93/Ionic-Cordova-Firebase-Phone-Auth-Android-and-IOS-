@@ -1,0 +1,609 @@
+{
+  "project_info": {
+    "project_number": "107565011509",
+    "firebase_url": "https://dship-6fc02.firebaseio.com",
+    "project_id": "dship-6fc02",
+    "storage_bucket": "dship-6fc02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:3a6f77b5304b03c3",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-nstp3ic9mgkguudngnpche65etdqhnk5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft",
+            "certificate_hash": "13e8ff67829fa6d428a76eae864d3324747fd625"
+          }
+        },
+        {
+          "client_id": "107565011509-m40hef34pmu3qti92gr9hcnbfkq6f2fl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:15d351861f148895",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.aog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-2ivg8ue8d13be4o65lfra5511q52glfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.aog",
+            "certificate_hash": "52476c18665e0aab29dbba5c129bb2f7f2019c8d"
+          }
+        },
+        {
+          "client_id": "107565011509-gbpoauh99srnc1nees2g1lps3oii2o6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.aog",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:ae58df7085ba8e0a",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.bcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-fc6a1u9ifhp122u1s4csm0guf1iueglk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.bcc",
+            "certificate_hash": "13e8ff67829fa6d428a76eae864d3324747fd625"
+          }
+        },
+        {
+          "client_id": "107565011509-54hrg5m3l8btiu1guqpende2mm4miovf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.bcc",
+            "certificate_hash": "e5c643251e614c1b7f95e3cd3e765e9868e2c143"
+          }
+        },
+        {
+          "client_id": "107565011509-aad0scos2rnn7m9uhg1fb8h58f4u48bg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.bcc",
+            "certificate_hash": "29ee0dba3f941e168e820f6c21ce0376e0cd7717"
+          }
+        },
+        {
+          "client_id": "107565011509-qumftuobn3eu5fkdedj7m2h285gnfuvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.bcc",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:14ffbc54ce45a9ec",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-eoa6pjvk8iqjhhjnid1pe6sg65jb18va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.demo",
+            "certificate_hash": "13e8ff67829fa6d428a76eae864d3324747fd625"
+          }
+        },
+        {
+          "client_id": "107565011509-ddkrfab7hdr9kg0sl611bfhmi2mide4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.demo",
+            "certificate_hash": "fcb6190b1647b61f96bd3859554426bc054b4b11"
+          }
+        },
+        {
+          "client_id": "107565011509-190mjtt1hijrqrvhl83tgc39hb0327cb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.demo",
+            "certificate_hash": "5064674763deb498f1e40cfba8e604d080b5fbe6"
+          }
+        },
+        {
+          "client_id": "107565011509-k7nl13jnni3kcb3b1q402tbak8t1t0na.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.demo",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:72ff6560aeec9897",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.discipleship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-2qh1pi9rav6knknucq2f8jk4chej1v3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.discipleship",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:7bff2ada33089214",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.faithlifecenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-t8biq8lojc8pntk9io9ru4nhbgvs0leq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.faithlifecenter",
+            "certificate_hash": "bd7b39a2dc18caf1c1c7204d95ca81202aaf8d8f"
+          }
+        },
+        {
+          "client_id": "107565011509-fpi1sj218m5dc9anet1tpn9phvpfc5m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.faithlifecenter",
+            "certificate_hash": "9d204348d5fa0b6357bcd89950da9b14aab0dea5"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:124e9909856b794c",
+        "android_client_info": {
+          "package_name": "com.churchapp.disciplesoft.ifc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-8d8h7o5gsoed07bq9ichegkioi8cvljn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.ifc",
+            "certificate_hash": "d6e7035979205d322668c0d98533891894a21254"
+          }
+        },
+        {
+          "client_id": "107565011509-8clt3s8hjb1tlr700qb76bagvnmj0s17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.ifc",
+            "certificate_hash": "6d2755bad512e2ff8f615a42114f7b15df64c477"
+          }
+        },
+        {
+          "client_id": "107565011509-ui0mo3ic9t6tgkcu17dbjppms4490asr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.churchapp.disciplesoft.ifc",
+            "certificate_hash": "13e8ff67829fa6d428a76eae864d3324747fd625"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:18ea5ad736472e20",
+        "android_client_info": {
+          "package_name": "com.disciplesoft.testings.bcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-6j1139p4qe4e16krgt1bc92ar0j5954m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.disciplesoft.testings.bcc",
+            "certificate_hash": "1fa117c911d17bcff16a65890042adc2c196f3d1"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:2f2214a9b885c9f5",
+        "android_client_info": {
+          "package_name": "com.disciplesoft.testings.discipleship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-m89ec0r3ads7oi61jc5i5t12tt2iljrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.disciplesoft.testings.discipleship",
+            "certificate_hash": "1fa117c911d17bcff16a65890042adc2c196f3d1"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107565011509:android:7324463f3323b51d",
+        "android_client_info": {
+          "package_name": "com.example.testings.discipleship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107565011509-2fs1s6hfp7rk9l2upq86hlld08mgn5u3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testings.discipleship",
+            "certificate_hash": "1fa117c911d17bcff16a65890042adc2c196f3d1"
+          }
+        },
+        {
+          "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdbx5qABosRiiMFvSDhDqjSoX-gHZmvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107565011509-dfqh3tdsqmduiaol7bhn4mj18u5rd05s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107565011509-mrfofsu3bpo99747il1g5octuckr2cbs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.churchapp.disciplesoft.bcc"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

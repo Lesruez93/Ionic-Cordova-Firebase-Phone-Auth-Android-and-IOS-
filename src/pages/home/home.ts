@@ -1,16 +1,6 @@
 import {Component} from '@angular/core';
-import {
-    Alert,
-    AlertController,
-    IonicPage,
-    MenuController,
-    ModalController,
-    NavController,
-    NavParams,
-    Platform
-} from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AngularFireAuth} from 'angularfire2/auth';
-
 
 
 @IonicPage()
@@ -21,34 +11,42 @@ import {AngularFireAuth} from 'angularfire2/auth';
 
 })
 export class HomePage {
+    private phone: any;
+    private uid: any;
 
 
 
-  constructor(public navCtrl: NavController,
+  constructor(
               private navParams:NavParams,
               private afs: AngularFireAuth,
-              private alertCtrl: AlertController,
-              private modalCtrl: ModalController,
+
 
 
   ) {
+      this.phone = navParams.get('phone');
+      this.uid = navParams.get('uid');
 
 
 
 
-          this.afs.authState.subscribe(res => {
 
+      this.afs.authState.subscribe(res => {
+                this.signOut()
               if (res && res.uid) {
 
           } else {
-                  this.navCtrl.setRoot('login',{
-                  });
+                  // this.navCtrl.setRoot('login',{
+                  // });
            }
 
 
 
 
   })
+
+      }
+      signOut(){
+      this.afs.auth.signOut()
 
       }
 

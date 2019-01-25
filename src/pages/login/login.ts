@@ -1335,9 +1335,6 @@ export class LoginPage {
         this.navCtrl.setRoot('HomePage',{
             uid:uid,
             phone:this.phoneNumber
-        },{
-            direction: 'forward',
-            animate: true
         });
 
     }
@@ -1357,6 +1354,7 @@ export class LoginPage {
         this.afs.auth.signInAndRetrieveDataWithEmailAndPassword('lesterrusike@gmail.com','llllllll')
             .then((success)=>{
                 console.log("iddiiid" + success.user.uid);
+                this.goToLogin(success.user.uid)
             }).then().catch(er =>{
                 this.presentAlert("Something went wrong")
             }
