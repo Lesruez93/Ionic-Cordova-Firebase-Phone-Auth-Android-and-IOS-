@@ -1,0 +1,7 @@
+{
+  "name": "mca",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

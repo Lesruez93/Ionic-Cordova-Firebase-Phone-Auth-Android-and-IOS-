@@ -22,10 +22,8 @@ export class LoginPage {
     showCodeInput = false;
     private isDisabled: boolean=false;
 
-    private user: any;
     private phoneNumber: any;
     private phone: string;
-    private logged: any;
     selectedCode= '+263'
     @ViewChild('select1') select1: Select;
 
@@ -1336,6 +1334,7 @@ export class LoginPage {
 
         this.navCtrl.setRoot('HomePage',{
             uid:uid,
+            phone:this.phoneNumber
         },{
             direction: 'forward',
             animate: true

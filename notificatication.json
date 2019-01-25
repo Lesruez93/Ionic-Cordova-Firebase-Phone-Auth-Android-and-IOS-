@@ -1,0 +1,112 @@
+
+
+//Using Curl
+curl -X POST --header "Authorization: key=AIzaSyASJkL7b2Jax3-1sZXlJ5y1CllJAKrynSA" --Header "Content-Type: application/json" https://fcm.googleapis.com/fcm/send -d
+{"to": "/topics/BCC",
+  "notification": {
+    "title" : " New Event",
+    "body" : "Title",
+    "sound":"default"
+  },
+  "data": {
+    "title" : "New event",
+    "body" : " Title",
+    "page":"EventsTabsPage"
+  }
+}
+
+//When using post method
+Post Url = https://fcm.googleapis.com/fcm/send'
+headers [ Content-Type =application/json  &
+Authorization = AIzaSyASJkL7b2Jax3-1sZXlJ5y1CllJAKrynSA
+]
+
+
+ Post Body    using Postman....  =(
+//Events
+{"to": "/topics/BCC",
+  "notification": {
+    "title" : " New Event",
+    "body" : "Title",
+    "sound":"default"
+  },
+  "data": {
+    "title" : "New event",
+    "body" : " Title",
+    "page":"EventsTabsPage"
+  }
+},
+
+//Notices
+{"to": "/topics/BCC",
+  "notification": {
+    "title" : "New announcement",
+    "body" : "title",
+    "sound":"default"
+  },
+  "data": {
+    "title" : "New Announcement",
+    "body" : "title",
+    "page":"NoticePage"
+  }
+}
+//Livestream
+{"to": "/topics/BCC",
+"notification": {
+"title" : "Live Broadcast",
+"body" : "Churchname started a broadcast",
+"sound":"default"
+},
+"data": {
+"title" : "Live Broadcast",
+"body" : "Churchname is live",
+"page":"LivePage"
+}
+}
+//Podcasts
+{"to": "/topics/BCC",
+"notification": {
+"title" : " New Audio message",
+"body" : "title",
+"sound":"default"
+},
+"data": {
+"title" : "New audio message",
+"body" : "title",
+"page":"AudioPage"
+}
+}
+
+///Devotions
+{    "to": "/topics/BCC",
+    "notification": {
+    "title" : " New Devotion",
+    "body" : "title",
+    "sound":"default"
+    },
+    "data": {
+    "title" : "New Devotion",
+    "body" : "title",
+    "page":"DevotionsPage"
+    }
+}
+
+//Projects
+{
+
+      "to": "/topics/BCC",
+        "notification": {
+        "title" : " New Project Added",
+        "body" : "title",
+        "sound":"default"
+        },
+        "data": {
+        "title" : "New Project Added",
+        "body" : "title",
+        "page":"GiveTabs"
+        }
+}
+
+
+)
+

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e355d9e5-a041-41a7-849c-012fcb23c182" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.ts" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/login.ts" afterPath="$PROJECT_DIR$/src/pages/login/login.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,11 +31,11 @@
       <file leaf-file-name="login.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4002">
-              <caret line="1352" column="1" lean-forward="false" selection-start-line="1352" selection-start-column="1" selection-end-line="1352" selection-end-column="1" />
+            <state relative-caret-position="-3412">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
-                <element signature="e#768#31349#0" expanded="false" />
+                <element signature="e#720#31301#0" expanded="false" />
                 <element signature="n#!!block;n#alertResend#0;n#LoginPage#0" expanded="false" />
               </folding>
             </state>
@@ -172,6 +167,12 @@
               <item name="Phone Auth" type="b2602c69:ProjectViewProjectNode" />
               <item name="Phone Auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Phone Auth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Phone Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="providers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -215,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548407018955</updated>
       <workItem from="1548407025348" duration="40000" />
-      <workItem from="1548407898513" duration="5422000" />
+      <workItem from="1548407898513" duration="6360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5462000" />
+    <option name="totallyTimeSpent" value="6400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -386,11 +387,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4002">
-          <caret line="1352" column="1" lean-forward="false" selection-start-line="1352" selection-start-column="1" selection-end-line="1352" selection-end-column="1" />
+        <state relative-caret-position="-3412">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#768#31349#0" expanded="false" />
+            <element signature="e#720#31301#0" expanded="false" />
             <element signature="n#!!block;n#alertResend#0;n#LoginPage#0" expanded="false" />
           </folding>
         </state>
