@@ -1,0 +1,63 @@
+
+<ion-header><ion-navbar color="primary">
+  <ion-title text-center="">Login</ion-title>
+</ion-navbar>
+</ion-header>
+<ion-content>
+  <div  class="c">
+    <div>
+      <img src="../assets/img/appico.png"class=" cover" >
+
+    </div>
+  </div>
+  <ion-card>
+
+    <ion-list >
+
+
+
+          <ion-item >
+            <ion-label stacked color="secondary">Country</ion-label>
+            <ion-select padding-left padding-right #select1 [(ngModel)]="selectedCode" class="borders" >
+              <ion-option value="+263" selected>Zimbabwe</ion-option>
+              <ion-option *ngFor="let c of countries" value="{{c.dialling_code}}">{{c.country_name}}</ion-option>
+
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <!--<ion-title [(ngModel)]="selectedCode" (click)="openSelect()">pick </ion-title>-->
+            <ion-label text-center stacked color="secondary">Phone Number</ion-label>
+
+            <ion-input padding-left type="number"  disabled="{{isDisabled}}"[(ngModel)]="phoneNumber"
+                       placeholder="eg: 775676656"  class="borders"></ion-input>
+
+          </ion-item>
+
+
+
+      <ion-item *ngIf="showCodeInput">
+        <ion-label text-center stacked color="secondary">Enter Code Here</ion-label>
+
+        <ion-input padding-left type="number" class="borders" maxlength="6" [(ngModel)]="code" placeholder="eg 123456" ></ion-input>
+      </ion-item>
+  <ion-item>
+    <button full ion-button   block (click)="PhoneLoginNative()" *ngIf="!showCodeInput" icon-left>Send Code</button>
+    <button full hidden ion-button  block (click)="email()" icon-left>email</button>
+
+    <button full ion-button  block (click)="verify()" *ngIf="showCodeInput">Enter Code</button>
+
+  </ion-item >
+  <ion-item *ngIf="showCodeInput" (click)="resendCode()">
+    <ion-label style="font-size: medium"  text-center stacked color="primary">Resend Code</ion-label>
+  </ion-item>
+  <ion-item (click)="reEnter()" *ngIf="showCodeInput">
+    <ion-label style="font-size: medium"  text-center stacked color="primary">Renter phone number</ion-label>
+  </ion-item>
+
+
+
+</ion-list>
+</ion-card>
+
+</ion-content>

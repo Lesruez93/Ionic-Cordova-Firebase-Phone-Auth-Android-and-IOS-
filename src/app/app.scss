@@ -1,0 +1,33 @@
+ion-icon {
+  &[class*="appname-"] {
+    // Instead of using the font-based icons
+    // We're applying SVG masks
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+  // custom icons
+  &[class*="appname-devotions"] {
+    mask-image: url(../assets/imgs/devotions.svg);
+  }
+  &[class*="appname-events"] {
+    mask-image: url(../assets/imgs/events.svg);
+  }
+  &[class*="appname-live"] {
+      mask-image: url(../assets/imgs/livestream.svg);
+    }
+  &[class*="appname-videos"] {
+    mask-image: url(../assets/imgs/videos.svg);
+  }
+  &[class*="appname-notices"] {
+    mask-image: url(../assets/imgs/notices.svg);
+  }
+  &[class*="appname-testimony"] {
+    mask-image: url(../assets/imgs/testimony.svg);
+  }
+  &[class*="appname-podcast"] {
+    mask-image: url(../assets/imgs/podcast.svg);
+  }}
