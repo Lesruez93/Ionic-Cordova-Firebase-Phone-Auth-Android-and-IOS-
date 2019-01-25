@@ -28,11 +28,11 @@ export class MyApp {
               private afs: AngularFireAuth,
 
 
-  ) {
+  ) {          this.check()
+
 
 
       platform.ready().then(() => {
-          this.check()
           statusBar.styleDefault();
           this.statusBar.backgroundColorByHexString('#f2af37');
           // this.menu.swipeEnable(false)
@@ -88,10 +88,13 @@ export class MyApp {
               if (res && res.uid ) {
                   this.rootPage = Home;
                   this.uid = res.uid;
+                  console.log("innn")
+
 
               }
               else {
                   this.rootPage = Login
+                  console.log("out")
 
               }
           })

@@ -17,7 +17,7 @@
 
 
           <ion-item >
-            <ion-label stacked color="secondary">Country</ion-label>
+            <ion-label stacked color="secondary" text-center="">  Country</ion-label>
             <ion-select padding-left padding-right #select1 [(ngModel)]="selectedCode" class="borders" >
               <ion-option value="+263" selected>Zimbabwe</ion-option>
               <ion-option *ngFor="let c of countries" value="{{c.dialling_code}}">{{c.country_name}}</ion-option>
@@ -43,7 +43,6 @@
       </ion-item>
   <ion-item>
     <button full ion-button   block (click)="PhoneLoginNative()" *ngIf="!showCodeInput" icon-left>Send Code</button>
-    <button full  ion-button  block (click)="email()" icon-left>email</button>
 
     <button full ion-button  block (click)="verify()" *ngIf="showCodeInput">Enter Code</button>
 

@@ -18,25 +18,27 @@ export class HomePage {
 
   constructor(
               private navParams:NavParams,
+              private navCtrl:NavController,
               private afs: AngularFireAuth,
 
 
 
   ) {
-      this.phone = navParams.get('phone');
-      this.uid = navParams.get('uid');
+
+      console.log("uid"+this.uid)
 
 
 
 
 
       this.afs.authState.subscribe(res => {
-                this.signOut()
+
               if (res && res.uid) {
+                  this.uid = res.uid
 
           } else {
-                  // this.navCtrl.setRoot('login',{
-                  // });
+
+                  this.signOut()
            }
 
 
@@ -46,6 +48,8 @@ export class HomePage {
 
       }
       signOut(){
+          this.navCtrl.setRoot('login',{
+          });
       this.afs.auth.signOut()
 
       }

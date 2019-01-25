@@ -1253,12 +1253,12 @@ export class LoginPage {
 
                     this.showCodeInput = true;
                 }).catch((error) => {
-                this.presentAlert(error.message)
+                this.presentAlert(error)
                 loader.dismissAll()
                 console.error(error)
             });
         }
-        else this.presentAlert("Phone Number Cannot Be Null")
+        else this.presentAlert("Phone Number Cannot Be Empty")
     }
 
 
@@ -1343,23 +1343,11 @@ export class LoginPage {
         this.alertResend()
     }
     reEnter(){
+        //Refresh the page
         this.navCtrl.setRoot(this.navCtrl.getActive().component);
 
     }
-    email() {
-        // let credentials = {
-        //     email: 'lesterrrusike@gmaila.com',
-        //     password: 'llllllll'
-        // };
-        this.afs.auth.signInAndRetrieveDataWithEmailAndPassword('lesterrusike@gmail.com','llllllll')
-            .then((success)=>{
-                console.log("iddiiid" + success.user.uid);
-                this.goToLogin(success.user.uid)
-            }).then().catch(er =>{
-                this.presentAlert("Something went wrong")
-            }
 
-        )}
 
 
 
